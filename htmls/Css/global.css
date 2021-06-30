@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+}
+
+html {
+	--vermelho-claro: #e42330;
+	--vermelho-escuro: #BF1f2d;
+	--vermelho: #d9131a;
+	--preto: #141414;
+	--cinza-escuro: #383838;
+	--cinza-claro: #767676;
+	--branco: #fefefe;
+
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ? Button red and white */
+button {
+	text-transform: uppercase;
+	background-color: var(--vermelho-claro);
+	color: var(--branco);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+
+	padding: 20px 72px;
+
+	border-radius: 34px;
+
+	cursor: pointer;
+}
+
+/* Button White */
+.button {
+	text-transform: uppercase;
+	background: none; /* Para tirar a cor, precisa colocar background e não backgrond-color */
+	color: var(--vermelho-claro);
+	border: 3px solid var(--vermelho-claro);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+
+	padding: 20px 72px;
+
+	border-radius: 34px;
+
+	cursor: pointer;
+}
+
+/* ? Subtitle white */
+.subtitle {
+	font-size: 36px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	line-height: 45px;
+	letter-spacing: 3.6px;
+	text-align: center;
+	color: var(--branco);
+	text-transform: uppercase;
+}
+
+.subtitle::after {
+	content: "";
+	width: 120px;
+	height: 4px;
+	background-color: var(--branco);
+	display: block;
+	margin: 15px auto 50px auto;
+}
+
+.subtitle.red {
+	color: var(--vermelho-claro);
+}
+
+.subtitle.red::after {
+	background-color: var(--vermelho-claro);
+}
+
+.active::after {
+	display: block;
+	content: "";
+	width: 90px;
+	height: 5px;
+	position: relative;
+	top: 32px;
+	left: 15px;
+	background-color: var(--vermelho-escuro);
+}
+
+/* !header */
+.header {
+	width: 100%;
+	top: 0;
+	position: fixed;
+	background-color: var(--preto);
+	z-index: 10;
+	padding: 15px 0;
+	text-align: center;
+}
+
+.header nav ul {
+	text-align: right;
+}
+
+.header nav ul li {
+	display: inline-block; /* Ficará um do lado do outro colocando inline-block no ul li */
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.header nav ul li a { /* Afeta diretamente as letras e palavras */
+	color: var(--branco);
+	font-size: 14px;
+	width: 100%;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: .1em;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.header nav ul li a.menu_ativo {
+	border: 5px solid var(--vermelho-claro);
+}
+
+/* ! Introduction */
+.introduction {
+	margin-top: 96px;
+	background: url('../Images/Home/home-introduction.jpg') no-repeat right/cover;
+	height: 928px;
+	text-align: left;
+	padding: 141px 110px;
+}
+
+.introduction .title {
+	font-size: 48px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 60px;
+	letter-spacing: .1em;
+	max-width: 480px;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--branco);
+	margin-bottom: 20px;
+}
+
+.introduction .informations p {
+	font-weight: 400;
+	color: var(--branco);
+	max-width: 490px;
+	text-align: center;
+	margin-bottom: 38px;
+}
+
+/* ! ==================== Aprendizado ==================== */
+.quebra {
+	background-color: var(--preto);
+	padding-bottom: 50px;
+}
+
+.quebra .container .subtitle {
+	margin-top: 40px;
+}
+
+.quebra .container .apoiadores img {
+	height: 120px;
+}
+
+/* ! ==================== FOOTER ==================== */
+.footer {
+	background-color: var(--cinza-escuro);
+	padding: 25px 0;
+}
+
+.footer h2 {
+	font-size: 18px;
+	line-height: 25px;
+	text-align: left;
+}
+
+.footer h2::after {
+	margin: 10px 0 20px 0;
+}
+
+.footer .history {
+	padding-right: 45px;
+}
+
+.footer .history p, .footer .contact p {
+	color: white;
+	font-size: 14px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	line-height: 20px;
+}
+
+
+.footer .redes ul li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.copy {
+	background-color: var(--cinza-claro);
+	padding: 25px;
+}
+
+.copy .container p {
+	color: var(--branco);
+	text-transform: uppercase;
+	font-family: arial;
+	font-weight: 700;
+	font-size: 18px;
+}
