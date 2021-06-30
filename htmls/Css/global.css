@@ -93,7 +93,7 @@ button {
 	width: 90px;
 	height: 5px;
 	position: relative;
-	top: 32px;
+	top: 30px;
 	left: 15px;
 	background-color: var(--vermelho-escuro);
 }
@@ -166,7 +166,7 @@ button {
 
 /* ! ==================== Aprendizado ==================== */
 .quebra {
-	background-color: var(--preto);
+	background-color: black;
 	padding-bottom: 50px;
 }
 

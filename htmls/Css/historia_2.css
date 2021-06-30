@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+.introduction_historia {
+  background: url('../Images/Historia/img_poster_caikepro.jpg') no-repeat center/cover;
+  width: 100%;
+  height: 400px;
+  padding-left: 0px;
+  padding-top: 98px;
+  text-align: left;
+}
+
+.introduction_historia .title {
+  max-width: 800px;
+  display: inline-block;
+  width: 600px;
+  margin-left: -100px;
+  margin-top: 40px;
+  vertical-align: top;
+  text-align: left;
+  color: var(--vermelho);
+}
+
+.introduction_historia h2.title transparent{
+  color: transparent;
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: var(--vermelho); /* cor da borda */
+}
+
+.introduction_historia img {
+  display: inline-block;
+  width: 300px;
+}
+
+/* ! =============== CONTENT =============== */
+main.container {
+  text-align: center;
+  padding-top: 30px;
+}
+
+main.container h2.subtitle.red {
+  font-size: 24px;
+}
+
+main.container p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 25px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 6px black;
+  padding: 24px 64px;
+}

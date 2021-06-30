@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.galeria h2 {
+  margin-top: 115px;
+}
+
+.galeria .motivation img {
+  margin-bottom: 10px;
+}
+
+.galeria .center button {
+  margin: 15px auto 50px auto;
+  display: block;
+}
