@@ -1,7 +1,7 @@
 {
   "name": "Fisiculturismo",
   "version": "1.0.0",
-  "description": "repassar os ensinamentos dos conhecimentos sobre fisiculrismo, musculação e consciência corporal",
+  "description": "",
   "main": "Src/index.js",
   "scripts": {
     "start": "nodemon ."
