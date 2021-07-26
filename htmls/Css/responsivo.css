@@ -1,0 +1,102 @@
+@media screen and (max-width: 788px) {
+    .header {
+        position: relative;
+    }
+
+    .header nav ul {
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .header nav ul li {
+        padding: 4px;
+        width: 160px;
+        border: 2px solid transparent;
+        margin-left: 4px;
+        margin-top: 8px;
+    }
+
+    .header nav ul li:hover {
+        border: 2px solid #fafafa;
+    }
+
+    .header nav ul li a {
+        font-size: 16px;
+    }
+
+    .introduction {
+        margin: 0;
+        background: url(../Images/Home/home-introduction.jpg) no-repeat left/cover;
+        padding-left: 0; 
+    }
+
+    .informations {
+        margin-top: 170px;
+        min-width: 500px;
+        text-align: center;
+        margin: 170px auto auto 130px;
+    }
+
+    .informations p {
+        margin-top: -10px;
+        line-height: 25px;
+        font-size: 18px;
+        min-width: 550px;
+    }
+
+    .informations .title {
+        min-width: 500px;
+    }
+
+    .imagem {
+        width: 300;
+        height: 100;
+        object-fit: cover;
+    }
+
+    .galeria .motivation img {
+        margin-bottom: 24px;
+    }
+
+    .cariani, .franco {
+        margin-bottom: 30px;
+    }
+
+    .subtitle.famoso {
+        font-size: 24px;
+    }
+
+    .tipos_geneticos {
+        margin-bottom: 24px;
+    }
+
+    .footer .history p, .footer .contact p {
+        margin-bottom: 18px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .informations {
+        max-width: 300px;
+        margin: 170px auto auto 20px;
+    }
+
+    .informations .title {
+        font-size: 24px;
+        max-width: 100%;
+    }
+
+    .footer .history, .footer .contact, .footer .redes {
+        text-align: center;
+        padding: 0;
+    }
+
+    .subtitle.red {
+        text-align: center;
+    }
+
+    .footer h2::after {
+        margin: 5px auto 20px auto;
+    }
+}
